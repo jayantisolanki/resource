@@ -1,0 +1,66 @@
+/* ************* Media Queries Tablets ****************** */
+@media only screen and (max-width: 1169px) {
+
+}
+@media only screen and (max-width: 1023px) {
+
+}
+@media only screen and (max-width: 959px) {
+
+}
+@media only screen and (max-width: 819px) {
+
+}
+@media only screen and (max-width: 800px) {
+/*Navigation*/
+#nav {display:none;position:absolute;left:0;right:0;background:#073e74;}
+#nav ul{background:#305d93;}
+.toggleMenu, #nav .menuIcon {display:block;}
+#nav li {float:none;display:block;border:none;}
+#nav li a{border-top:1px solid #002d63}
+#nav li.parent {position:relative;}
+#nav li .menuIcon, #nav li li .menuIcon {width:46px; height:auto; background-color:#002d63; background-color: rgba(0, 45, 99, 0.5); background-image:url(../images/down-arrow.gif); background-repeat:no-repeat; background-position:center 15px; position:absolute;right:0;top:0;bottom:0;cursor:pointer;}
+#nav li .menuIcon.active, #nav li li .menuIcon.active {background-color:#002d63; background-color: rgba(1, 36, 78, 0.5);}
+#nav li > a:hover, #nav li.hover > a, #nav li.active > a, #nav li ul li a:hover, #nav li ul li > a.selected, #nav ul a:hover, .noJS #nav ul a:focus, #nav ul a.selected, #nav > li > a:hover, #nav > li.hover > a, #nav > li.focus > a {background-color:#002d63;color: #fff;}
+#nav ul {width:100%;display:none;position:static;transition:none;-webkit-transition:none;}
+.hasJS #nav ul{opacity:1;}
+#nav li ul li, #nav ul a {width:100%}
+#nav > li:hover > ul, #nav li li:hover > ul, #nav li li li:hover > ul {display:none;}
+#nav > li.resHover > ul, #nav li li.resHover > ul, #nav li li li.resHover > ul {position:static;margin:0;top:0;left:0;width:100%;border:none;}
+#nav ul, #nav *:hover ul ul, #nav .hover ul ul, #nav .focus ul ul {margin-left:0;}
+#nav li a {padding-left:15px;padding-right:15px;display:block;line-height:30px;font-size:14px;}
+#nav li ul li a {padding:7px 55px 7px 25px; display:block;line-height:21px; background:url(../images/right-arrow.gif) no-repeat 15px 15px;color:#fff;border:none}
+#nav li ul li ul li a {padding-left:45px;background-position:33px center}
+#nav li ul li ul li ul li a {padding-left:60px;background-position:45px center}
+#nav > li > a:hover, #nav > li.hover > a, #nav > li.focus > a, #nav > .highlight > a {background-color:#305d93;color: #fff;}
+#nav li ul li a:hover, #nav li ul li > a.selected, #nav ul a:hover, .noJS #nav ul a:focus, #nav ul a.selected, #nav ul > .highlight > a {background-color:#305d93;color: #fff;}
+
+/*Responsive Table*/
+.tableOut table, .tableOut tr, .tableOut td, .tableOut td:before { display:block; text-align:left; border:none;	/* Converts a table, table row, table column and table column:before into a block element */ }
+.tableOut table, .tableOut tr .tableOut td:last-child { border-bottom:none; }
+.tableOut thead, .tableOut tr th { position:absolute;	/* Hides table head but not using display none */ top:-1000em; left:-1000em; }
+.tableOut tr { border:1px solid #eeeeee; border-bottom:2px solid #eeeeee;  margin:0 0 20px; }
+.tableOut tr td:nth-child(1) { /* first column of the row */ border-left:none;}
+.tableOut tr td:last-child { /* last column of the row */ border-right:none; }
+.tableOut tr:last-child .td, .tableOut td { /* Column in the last row and column */ border-bottom:1px solid #eeeeee; }
+.tableOut td:before { /* prints the value of data-label attribute before the column data */ font-weight:bold; padding-right:20px; line-height:27px; color:#174471; content:" "attr(data-label)"";	/* call the attribute value of data-label and adds a string // */ }
+.tableOut tbody {display:block;}
+.tableOut tr td {padding:5px 15px; width:auto !important;}
+}
+@media only screen and (max-width: 768px) {
+.r-tabs .r-tabs-nav {display: none;}
+.r-tabs .r-tabs-accordion-title {display: block;}
+}
+/* ************* Mobiles Media Queries ****************** */
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 639px) {
+
+}
+@media only screen and (max-width: 479px) {
+
+}
+@media only screen and (max-width: 359px) {
+
+}
